@@ -1,9 +1,13 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import { PageTemplate, Heading, Link, Paragraph } from 'components'
 
 const AboutPage = () => {
   return (<PageTemplate>
+    <Helmet>
+      <title>About</title>
+    </Helmet>
     <Heading center level={1} id="about">About</Heading>
     <Paragraph>
       I was born at the heart of Europe, where rivers abound in beer. Over the years,
