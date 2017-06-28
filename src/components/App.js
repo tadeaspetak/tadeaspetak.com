@@ -4,7 +4,7 @@ import { injectGlobal, ThemeProvider } from 'styled-components'
 import Helmet from 'react-helmet'
 
 import { AboutPage, PortfolioPage } from 'components'
-
+import ScrollToTop from './ScrollToTop'
 import theme from './themes/default'
 
 injectGlobal`
@@ -16,8 +16,9 @@ injectGlobal`
   }
 
   @media screen and (max-device-width: 480px) {
-  body {
-    -webkit-text-size-adjust: none;
+    body {
+      -webkit-text-size-adjust: none;
+    }
   }
 `
 
@@ -35,6 +36,7 @@ const App = () => {
         <meta property="og:image:height" content="630" />
         <link rel="icon" href="https://arc.js.org/icon.png" />
       </Helmet>
+      <ScrollToTop />
       <ThemeProvider theme={theme}>
         <Switch>
           <Route path="/" component={PortfolioPage} exact />
