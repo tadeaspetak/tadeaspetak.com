@@ -17,7 +17,7 @@ const styles = css`
   text-align: ${ifProp('center', 'center', 'inherit')};
 `
 
-const Heading = styled(({ level, children, reverse, palette, theme, ...props }) =>
+const Heading = styled(({ level, center, children, reverse, palette, theme, ...props }) =>
   React.createElement(`h${level}`, props, children)
 )`${styles}`
 
