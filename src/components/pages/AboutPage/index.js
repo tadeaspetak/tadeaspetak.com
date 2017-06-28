@@ -3,7 +3,6 @@ import React from 'react'
 import { PageTemplate, Heading, Link, Paragraph } from 'components'
 
 const AboutPage = () => {
-  // console.log(picture)
   return (<PageTemplate>
     <Heading center level={1} id="about">About</Heading>
     <Paragraph>
