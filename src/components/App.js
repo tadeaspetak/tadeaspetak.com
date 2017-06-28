@@ -14,6 +14,11 @@ injectGlobal`
   body {
     margin: 0;
   }
+
+  @media screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
 `
 
 const App = () => {
