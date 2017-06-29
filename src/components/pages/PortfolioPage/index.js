@@ -11,7 +11,7 @@ const PortfolioPage = () => {
   return (<PageTemplate>
     <Heading center level={1} id="experience">Experience</Heading>
     <Paragraph>
-      I am currently fullstacking at <Link href="https://zook.ai/" target="_blank">Zook AI</Link>,
+      Currently, I am fullstacking at <Link href="https://zook.ai/" target="_blank">Zook AI</Link>,
       building an AI that could be to the business world what thesaurus is to language.
       Previously, I have worked as a Web &amp; Java consultant at <Link href="https://jayway.com" target="_blank">Jayway</Link> and
       before that, I was creating a digital food ambassador at <Link href="https://www.ipiit.com/" target="_blank">ipiit</Link>.
@@ -43,13 +43,13 @@ const PortfolioPage = () => {
 
       <Heading level={2} id="czech-my-pixels">Czech My Pixels</Heading>
       <Paragraph>
-        A travelling blog of my girlfriend and mine. For me the only way to learn the digital ropes of anything is to
+        Travelling blog of my girlfriend and mine. For me the only way to learn the digital ropes of anything is to
         get my hands dirty with code which is why I&apos;ve written this myself. To learn React, Redux, server-side rendering,
         etc. Running at <Link target="_blank" href="http://czechmypixels.com">czechmypixels.com</Link>,
         the source can be found at <Link target="_blank" href="https://github.com/tadeaspetak/czech-my-pixels-blog">github</Link>.
       </Paragraph>
 
-      <Heading level={2} id="competence-days-projects">Competence Days Projects</Heading>
+      <Heading level={2} id="competence-days-projects">Competence Days</Heading>
       <Paragraph>
         My favourite perk of working at Jayway were so-called &quot;competence days&quot;.
         Every month, the entire company meets for a full day and everyone is encouraged to
