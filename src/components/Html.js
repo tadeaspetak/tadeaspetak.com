@@ -17,6 +17,7 @@ const Html = ({ styles, assets, state, content }) => {
         {assets.css.map(path => <link rel="stylesheet" type="text/css" key={path} href={path} />)}
         {styles}
         <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" />
+        <meta name="google-site-verification" content="jgMZTA7E0366JWVuRtxAnFqUQxibr7K_KybuZo0ESWI" />
       </head>
       <body {...bodyAttrs}>
         <main id="app" dangerouslySetInnerHTML={{ __html: content }} />
