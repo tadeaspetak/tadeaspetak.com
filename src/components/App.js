@@ -4,8 +4,10 @@ import { injectGlobal, ThemeProvider } from 'styled-components'
 import Helmet from 'react-helmet'
 
 import { AboutPage, PortfolioPage } from 'components'
+import favicon from 'assets/favicon.ico'
 import ScrollToTop from './ScrollToTop'
 import theme from './themes/default'
+
 
 injectGlobal`
   * {
@@ -34,7 +36,7 @@ const App = () => {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <link rel="icon" href="https://arc.js.org/icon.png" />
+        <link rel="icon" href={favicon} />
       </Helmet>
       <ScrollToTop />
       <ThemeProvider theme={theme}>

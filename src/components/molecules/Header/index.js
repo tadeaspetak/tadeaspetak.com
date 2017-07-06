@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
 import { Container, Icon, Link } from 'components'
-import picture from 'assets/picture.jpeg'
+import picture from 'assets/picture.jpg'
 
 const StyledHeader = styled.div`
   background: white;
