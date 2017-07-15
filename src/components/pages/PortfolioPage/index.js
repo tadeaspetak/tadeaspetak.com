@@ -60,7 +60,7 @@ const PortfolioPage = () => {
       <List>
         <Li>
           <Link target="_blank" href="https://tadeaspetak.gitbooks.io/scratching-the-surface-of-security/content/">Scratching the Surface of Security</Link>,
-          a gitbook capturing a few days of reading about basics of security and white hat hacking.
+          a gitbook capturing a few days of exploring basics of security and white hat hacking.
         </Li>
         <Li>
           A demo demonstrating <Link target="_blank" href="http://ml.tadeaspetak.com/">basic maths behind machine learning</Link>, code
