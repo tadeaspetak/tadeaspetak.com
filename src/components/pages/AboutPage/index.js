@@ -24,7 +24,7 @@ const AboutPage = () => {
       In my spare time, I do my best to compensate for the hours spent in stillness in
       front of a screen by slacklining, basic callisthenics, yoga (I&apos;m in the midst
       of a course to become a certified yoga teacher), playing badminton and squash. I
-      would never say no to a nice hikes. Some of the ones I haven&apos;t said no to can
+      would never say no to a nice hike. Some of the ones I haven&apos;t said no to can
       be found at <Link target="_blank" href="http://czechmypixels.com">Czech My Pixels</Link>.
       Oh, and books are my favourite invention of all times. Check out what I&apos;ve been up to lately
       on <Link target="_blank" href="https://www.goodreads.com/user/show/7310589-tadeas-petak">Goodreads</Link>.
