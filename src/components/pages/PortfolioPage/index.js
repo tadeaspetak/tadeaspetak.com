@@ -19,7 +19,7 @@ const PortfolioPage = () => {
 
     <Paragraph>
       I am on the programme committee for <Link href="http://oredev.org" target="_blank">Øredev</Link> this year,
-      responsibe for the frontend &amp; node.js tracks. If you haven&apos;t been, Øredev is a developer conference held anually in Malmö,
+      responsible for the frontend &amp; node.js tracks. If you haven&apos;t been, Øredev is a developer conference held annually in Malmö,
       Sweden. Do come, it&apos;s awesome.
     </Paragraph>
 
@@ -33,7 +33,7 @@ const PortfolioPage = () => {
         <Link href="http://bibliofair.com/" target="_blank">Bibliofair</Link> is based on an idea of a friend of mine to connect
         home libraries of people around the world, making the library network decentralised and distributed. We
         released an MVP in spring 2014 that was very well received, including an article in a major national
-        newspaper. Unforunately, after that we both lacked time to develop the platform further.
+        newspaper. Unfortunately, after that we both lacked time to develop the platform further.
       </Paragraph>
       <Paragraph>
         I still hope that at some point in the future, I will have a chance to continue with this project as to me,
@@ -67,7 +67,7 @@ const PortfolioPage = () => {
           at <Link target="_blank" href="https://github.com/tadeaspetak/machine-learning-maths">github</Link>.
         </Li>
         <Li>
-          <Link target="_blank" href="https://tadeaspetak.gitbooks.io/xsl-with-bi-publisher/content/">XSL Guide</Link>, since I (very unforunately) had to use
+          <Link target="_blank" href="https://tadeaspetak.gitbooks.io/xsl-with-bi-publisher/content/">XSL Guide</Link>, since I (very unfortunately) had to use
           XSL extensively in one of the projects I worked on while at Jayway.
         </Li>
       </List>
