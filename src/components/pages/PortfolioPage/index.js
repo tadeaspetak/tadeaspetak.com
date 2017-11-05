@@ -24,7 +24,7 @@ const PortfolioPage = () => {
     </Paragraph>
 
     <Paragraph>
-      A few projects I&apos;ve worked on follow.
+      A few other projects I&apos;ve worked on follow.
     </Paragraph>
 
     <Projects>
@@ -43,7 +43,7 @@ const PortfolioPage = () => {
 
       <Heading level={2} id="czech-my-pixels">Czech My Pixels</Heading>
       <Paragraph>
-        Travelling blog of my girlfriend and mine. For me the only way to learn the digital ropes of anything is to
+        Travelling blog of my ex-girlfriend and mine. For me, the only way to learn the digital ropes of anything is to
         get my hands dirty with code which is why I&apos;ve written this myself. To learn React, Redux, server-side rendering,
         etc. Running at <Link target="_blank" href="http://czechmypixels.com">czechmypixels.com</Link>,
         the source can be found at <Link target="_blank" href="https://github.com/tadeaspetak/czech-my-pixels-blog">github</Link>.
