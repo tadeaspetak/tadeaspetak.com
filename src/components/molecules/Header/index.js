@@ -73,7 +73,7 @@ const Header = ({ isGlued }) => {
         <HeaderLink to="/about">About</HeaderLink>
       </Left>
       <Right>
-        <IconLink href="https://www.linkedin.com/in/tadea%C5%A1-pet%C3%A1k-2846853a/" target="_blank"><Icon icon="linkedin" /></IconLink>
+        <IconLink href="https://www.linkedin.com/in/tade%C3%A1%C5%A1-pet%C3%A1k-2846853a/" target="_blank"><Icon icon="linkedin" /></IconLink>
         <IconLink href="https://github.com/tadeaspetak" target="_blank"><Icon icon="github" /></IconLink>
         <IconLink href="http://czechmypixels.com" target="_blank"><Icon icon="pencil" /></IconLink>
         <IconLink href="https://www.goodreads.com/user/show/7310589-tadeas-petak" target="_blank"><Icon icon="book" /></IconLink>
