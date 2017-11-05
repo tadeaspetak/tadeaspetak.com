@@ -11,7 +11,7 @@ const PortfolioPage = () => {
   return (<PageTemplate>
     <Heading center level={1} id="experience">Experience</Heading>
     <Paragraph>
-      Currently, I am fullstacking at <Link href="https://zook.ai/" target="_blank">Zook AI</Link>,
+      Until August, I was fullstacking at <Link href="https://zook.ai/" target="_blank">Zook</Link>,
       building an AI that could be to the business world what thesaurus is to language.
       Previously, I have worked as a Web &amp; Java consultant at <Link href="https://jayway.com" target="_blank">Jayway</Link> and
       before that, I was creating a digital food ambassador at <Link href="https://www.ipiit.com/" target="_blank">ipiit</Link>.
