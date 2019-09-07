@@ -2,7 +2,8 @@
   "name": "tadeaspetak.com",
   "version": "1.0.0",
   "description": "My personal website.",
-  "author": "Tadeas Petak",
+  "author": "Tadeáš Peták",
+  "keywords": ["software development", "tech", "yoga", "books"],
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",

@@ -7,16 +7,7 @@ module.exports = {
     title: 'Tadeáš Peták',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        name: 'description',
-        content: 'Personal website of Tadeáš Peták.'
-      },
-      {
-        hid: 'keywords',
-        name: 'keywords',
-        content: 'software development, tech, yoga, books'
-      }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
     link: [
       {
