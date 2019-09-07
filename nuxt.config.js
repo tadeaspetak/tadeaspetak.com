@@ -7,7 +7,17 @@ module.exports = {
     title: 'Tadeáš Peták',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      // Open Graph
+      { name: 'og:title', content: 'Tadeáš Peták' },
+      {
+        name: 'og:description',
+        content:
+          'Massive fan of yoga, books, and the outdoors. Scouting for Øredev.'
+      },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:url', content: 'https://tadeaspetak.com' },
+      { name: 'og:image', content: 'https://tadeaspetak.com/head.jpg' }
     ],
     link: [
       {
