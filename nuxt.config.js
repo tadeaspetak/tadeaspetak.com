@@ -4,17 +4,45 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Tadeáš Peták',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'Personal website of Tadeáš Peták.'
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content: 'software development, tech, yoga, books'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/png', href: '/favicon-16x16.png', sizes: '16x16' }, { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', sizes: '32x32' }, { rel: 'icon', type: 'image/png', href: '/favicon-64x64.png', sizes: '64x64' }, { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Amiri|Noto+Serif&display=swap' }]
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/favicon-16x16.png',
+        sizes: '16x16'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/favicon-32x32.png',
+        sizes: '32x32'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/favicon-64x64.png',
+        sizes: '64x64'
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Amiri|Noto+Serif&display=swap'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
