@@ -17,7 +17,7 @@ module.exports = {
       },
       { name: 'og:type', content: 'website' },
       { name: 'og:url', content: 'https://tadeaspetak.com' },
-      { name: 'og:image', content: 'https://tadeaspetak.com/head.jpg' }
+      { name: 'og:image', content: 'https://tadeaspetak.com/banner.jpg' }
     ],
     link: [
       {
