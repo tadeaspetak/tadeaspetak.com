@@ -93,7 +93,7 @@
 
       <p>
         Every now and then, I write something and realise it might be the number
-        one thing I'd like to get better at:
+        one thing I'd like to get better at: check out
         <a
           href="https://medium.com/predict/end-of-life-as-we-know-it-e7955fd6f604"
           target="_blank"
@@ -108,7 +108,8 @@
           href="https://tadeaspetak.gitbooks.io/scratching-the-surface-of-security/content/"
           target="_blank"
           >Scratching the Surface of Security</a
-        >. At some point, I started
+        >
+        if you feel like it. At some point, I started
         <a
           href="https://www.goodreads.com/user/show/7310589-tadeas-petak"
           target="_blank"
