@@ -54,7 +54,7 @@
       <p>
         Riddles got me into software development, and they keep me in. Ideally,
         riddles that matter. Awareness is, in my mind, the most important thing
-        in the world, and attention the ultimate one to give to others.
+        in the world, and attention the ultimate one to give.
       </p>
 
       <h2>Work</h2>
@@ -64,8 +64,8 @@
         <a href="https://oredev.org" target="_blank">Øredev</a>, one of the
         largest dev conferences in the Nordics. Also, I am exploring new
         directions for the company to venture into, resulting e.g. in
-        <a href="https://mindthegaps.io" target="_blank">Mind the Gaps</a>, a
-        new event focusing on digital ethics.
+        <a href="https://mindthegaps.io" target="_blank">Mind the Gaps</a> that
+        focuses on digital ethics.
       </p>
       <p>
         Until August 2018, I was fullstacking at Zook (these days
