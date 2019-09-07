@@ -47,14 +47,14 @@
         learning to fika properly.
       </p>
       <p>
-        I really like yoga and teach it here and there. I would never say no to
-        a hike. I get, hmm, elated by melifluous words, and books must be my
-        favourite invention of all times.
+        I really like yoga and lead some classes here and there. I would never
+        say no to a hike. I get, hmm, elated by melifluous words, and books must
+        be my favourite invention of all times.
       </p>
       <p>
         Riddles got me into software development, and they keep me in. Ideally,
         riddles that matter. Awareness is, in my mind, the most important thing
-        in the world, and attention the ultimate one to give.
+        in the world, and attention the ultimate one to give to others.
       </p>
 
       <h2>Work</h2>
@@ -87,7 +87,7 @@
         and distributed. Time for this project dissipated after an MVP in 2014,
         but I would love to get back to it at one point. Some of the hikes I
         didn't say no to can be found at
-        <a href="https://czechmypixels.com">Czech My Pixels</a>. I've coded and
+        <a href="https://czechmypixels.com">Czech My Pixels</a>; I've coded and
         re-coded that blog to brush up on React.
       </p>
 
@@ -149,7 +149,12 @@
           target="_blank"
           >Pratchett</a
         >
-        I wouldn't recommend you with zero doubts.
+        I wouldn't recommend you with zero doubts. I really like
+        <a
+          href="https://www.goodreads.com/author/show/395812.Yuval_Noah_Harari"
+          target="_blank"
+          >Harari</a
+        >, but, then again, who doesn't?
       </p>
 
       <p>
