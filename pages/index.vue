@@ -54,7 +54,7 @@
       <p>
         Riddles got me into software development, and they keep me in. Ideally,
         riddles that matter. Awareness is, in my mind, the most important thing
-        in the world, and attention the ultimate one to give.
+        in the world and attention the ultimate one to give.
       </p>
 
       <h2>Work</h2>
@@ -87,8 +87,8 @@
         and distributed. Time for this project dissipated after an MVP in 2014,
         but I would love to get back to it at one point. Some of the hikes I
         didn't say no to can be found at
-        <a href="https://czechmypixels.com">Czech My Pixels</a>; I've coded and
-        re-coded that blog to brush up on React.
+        <a href="https://czechmypixels.com" target="_blank">Czech My Pixels</a>;
+        I've coded and re-coded that blog to brush up on React.
       </p>
 
       <p>
@@ -135,7 +135,9 @@
         >
         is by far the strangest — in an absolutely wonderful way — book I've
         read this year, and I think
-        <a href="https://www.goodreads.com/author/show/585.John_Steinbeck"
+        <a
+          href="https://www.goodreads.com/author/show/585.John_Steinbeck"
+          target="_blank"
           >Steinbeck</a
         >
         was a complete genius. There are very few things by
