@@ -64,8 +64,8 @@
         <a href="https://oredev.org" target="_blank">Øredev</a>, one of the
         largest dev conferences in the Nordics. Also, I am exploring new
         directions for the company to venture into, resulting e.g. in
-        <a href="https://mindthegaps.io" target="_blank">Mind the Gaps</a> that
-        focuses on digital ethics.
+        <a href="https://mindthegaps.io" target="_blank">Mind the Gaps</a>
+        focusing on digital ethics.
       </p>
       <p>
         Until August 2018, I was fullstacking at Zook (these days
