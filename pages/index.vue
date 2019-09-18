@@ -40,6 +40,18 @@
       </div>
     </nav>
     <div class="content">
+      <p class="rhymes">
+        these hills need none of what you've got<br />
+        through wind, slowly, time percolates<br />
+        you're just a dot and then you're not<br />
+        more than a speck that speculates:<br />
+        "when we all leave, when no one's here,<br />
+        do mountains stay or disappear?"<br />
+        them, looking down in all their fame<br />
+        their snowy peaks musing just the same<br />
+        <span class="place">(~Laguna Torre, Argentina)</span>
+      </p>
+
       <p>
         I was born at the heart of Europe, where rivers abound in beer. Over the
         years, the wind has blown me into various corners of the world, but for
@@ -230,7 +242,6 @@ export default {
 .content {
   text-align: left;
   width: 700px;
-  padding: 2.5rem 0;
 }
 
 nav {
@@ -296,6 +307,17 @@ a.name {
 
 p {
   margin: 0 0 1rem;
+}
+
+.rhymes {
+  font-style: italic;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.rhymes .place {
+  display: inline-block;
+  margin-left: 123px;
 }
 
 @media only screen and (max-width: 768px) {
