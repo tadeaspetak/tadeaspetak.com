@@ -53,9 +53,9 @@
       </p>
 
       <p>
-        I was born at the heart of Europe, where rivers abound in beer. Over the
+        I was born at the heart of Europe where rivers abound in beer. Over the
         years, the wind has blown me into various corners of the world, but for
-        the last five, I seem to have been holding on to the city of Malmö,
+        the last five I seem to have been holding on to the city of Malmö,
         learning to fika properly.
       </p>
       <p>
@@ -75,8 +75,8 @@
         Currently, I'm shaping the program of
         <a href="https://oredev.org" target="_blank">Øredev</a>, one of the
         largest dev conferences in the Nordics. Also, I am exploring new
-        directions for the company to venture into, resulting e.g. in
-        <a href="https://mindthegaps.io" target="_blank">Mind the Gaps</a>
+        directions for us to venture into, resulting e.g. in
+        <a href="https://mindthegaps.io" target="_blank">Mind the Gaps</a>, a brand new conference
         focusing on digital ethics.
       </p>
       <p>
@@ -84,7 +84,7 @@
         <a href="https://donna.legal" target="_blank">Donna</a>), back then
         building an AI that could be to the business world what thesaurus is to
         langugage. Before that, I worked as a consultant at
-        <a href="https://jayway.com" target="_blank">Jayway</a> and built a
+        <a href="https://jayway.com" target="_blank">Jayway</a> and was building a
         digital food ambassador at
         <a href="https://ipiit.com" target="_blank">ipiit</a> earlier still.
       </p>
@@ -99,8 +99,7 @@
         and distributed. Time for this project dissipated after an MVP in 2014,
         but I would love to get back to it at one point. Some of the hikes I
         didn't say no to can be found at
-        <a href="https://czechmypixels.com" target="_blank">Czech My Pixels</a>;
-        I've coded and re-coded that blog to brush up on React.
+        <a href="https://pixels.mariemala.com" target="_blank">Czech My Pixels</a>.
       </p>
 
       <p>
@@ -164,12 +163,12 @@
           target="_blank"
           >Pratchett</a
         >
-        I wouldn't recommend you with zero doubts. I really like
+        I wouldn't recommend to you with zero doubts. I really like
         <a
           href="https://www.goodreads.com/author/show/395812.Yuval_Noah_Harari"
           target="_blank"
           >Harari</a
-        >, but, then again, who doesn't?
+        > has to say, but, then again, who doesn't?
       </p>
 
       <p>
