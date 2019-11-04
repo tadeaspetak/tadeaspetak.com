@@ -1,0 +1,3347 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://admin.oredev.org/planner -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="./schedule_files/2d991d4a260bae11147220d366d6e037d2827404.css">
+
+
+<script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    if (!window.web3.currentProvider ||
+        !window.web3.currentProvider.isMetaMask) {
+      __insertDappDetected()
+    }
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><title>Øredev CFP</title></head>
+<body class="">
+  <script type="text/javascript">__meteor_runtime_config__ = JSON.parse(decodeURIComponent("%7B%22meteorRelease%22%3A%22METEOR%401.8.1%22%2C%22gitCommitHash%22%3A%22bf8115364623e674b408bc7726393959354d3af8%22%2C%22meteorEnv%22%3A%7B%22NODE_ENV%22%3A%22production%22%2C%22TEST_METADATA%22%3A%22%7B%7D%22%7D%2C%22PUBLIC_SETTINGS%22%3A%7B%7D%2C%22ROOT_URL%22%3A%22https%3A%2F%2Fadmin.oredev.org%22%2C%22ROOT_URL_PATH_PREFIX%22%3A%22%22%2C%22accountsConfigCalled%22%3Atrue%2C%22autoupdate%22%3A%7B%22versions%22%3A%7B%22web.browser%22%3A%7B%22version%22%3A%22b293c8cfa765682a3f713692d9da42737c629b40%22%2C%22versionRefreshable%22%3A%2226274202ee4fa79feff44ecf704f77f7ad7878f0%22%2C%22versionNonRefreshable%22%3A%222e69d4e7ccf3eb1519259c41fa2a2dbfcf5239cf%22%7D%2C%22web.browser.legacy%22%3A%7B%22version%22%3A%22364fb352a2355916c63b8155011ed39934c8c1df%22%2C%22versionRefreshable%22%3A%2226274202ee4fa79feff44ecf704f77f7ad7878f0%22%2C%22versionNonRefreshable%22%3A%228d76227b42648282f4316e61088c3ce6b15ba7c6%22%7D%7D%2C%22autoupdateVersion%22%3Anull%2C%22autoupdateVersionRefreshable%22%3Anull%2C%22autoupdateVersionCordova%22%3Anull%2C%22appId%22%3A%2233faloykrevfyjwk3k%22%7D%2C%22appId%22%3A%2233faloykrevfyjwk3k%22%2C%22isModern%22%3Atrue%7D"))</script>
+
+  <script type="text/javascript" src="./schedule_files/879f915af35490aa8207d871fb13196c8b555818.js"></script>
+
+
+
+
+  
+  
+  
+  
+  
+
+  
+  <div class="hiddendiv common"></div><div id="__blaze-root"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+  <link href="./schedule_files/icon" rel="stylesheet">
+  
+  <div class="wrapper">
+  <header>
+    
+  
+    
+    
+    
+    
+  
+
+  
+
+  <nav class="nav-top blue-grey lighten-3">
+    <div class="nav-wrapper">
+      <a href="https://admin.oredev.org/" class="brand-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122 22.3" enable-background="new 0 0 122 22.3">
+          <g fill="#444545">
+            <path d="M53.2
+            2.6c-1.2.1-2 .1-2.5.7l-1.8 2.5h9.1l-1.1 1.6h-9.1s-1.6 2.2-1.8 2.6c-.4.7 0 1
+            .6 1h11.8l-1.3 1.5h-10.9c-2.3 0-3.6-.4-3.9-1.3-.1-.3-.1-.7.1-1l4.7-7c.7-1.1
+            2.1-1.8 3.7-2 .9-.1 1.8-.2 2.7-.2h11l-1.3 1.5h-10zM92.2 2.6c-1.2.1-2
+            .1-2.5.7l-1.8 2.5h9.1l-1.1 1.6h-9.1s-1.6 2.2-1.8 2.6c-.4.7 0 1 .6
+            1h11.8l-1.3 1.5h-10.9c-2.3 0-3.6-.4-3.9-1.3-.1-.3-.1-.7.1-1l4.7-7c.7-1.1
+            2.1-1.8 3.7-2 .9-.1 1.8-.2 2.7-.2h11l-1.3 1.5h-10zM77.9 10.4c-.7 1.4-2.7
+            2.1-5.9 2.1h-11.8l7.9-11.4h11.1c.8 0 1.4 0 2.1.2.8.2 1.9 1 1.3 2.1-.8 1-4.7
+            7-4.7 7zm-.3-7.8h-7l-5.6 8.4h7.6c.8 0 1.4-.2 1.7-.6 0 0 4.3-6.4 4.7-7
+            .4-.7-.8-.8-1.4-.8zM108.3 9.3l10.1-8.2h3.6l-14.1 11.3h-3.2l1.3-11.3h3.4l-1.1
+            8.2zM52.2
+            20.2h-.5c-.5.2-1.8.8-4.1.2-4-.9-5.6-3.1-7.5-7.9-.9-2.1-1.6-4.2-2.7-5.1h1.4c1.2
+            0 2.2-.4 2.5-1.1.4-.7 1.7-2.9
+            1.8-3.6.1-.7-.5-1.2-1.3-1.4-.6-.2-1.3-.2-2.1-.2h-11.2l-7.5
+            11.4h3.8l3.2-5.1h4c.7 0 1.7.4 2.2 1 1.4 1.5 3.6 7.2 6.7 10.2 1.5 1.5 3.1 2.6
+            4.8 3 1.5.4 3 .5 4.4.1 1.4-.3 2.2-.8 2.3-1.3 0 0
+            0-.1-.2-.2zm-21.3-17.6h7.4c1.5 0 1.7.4 1.4.8-.3.5-1 1.5-1 1.5-.4.6-1
+            .9-1.8.9h-7.9l1.9-3.2zM26.5.2h-3.1l-1.7 1c-.4-.1-.9-.1-1.5-.1 0 0-5-.1-6.3
+            0-1.3.1-1.8.1-2.7.2-1.6.2-2.6.4-3.7 2-.8 1.2-4.7 7-4.7 7-.2.3-.2.6-.1 1
+            .1.2.2.4.4.5l-2.9 1.6h3.1l1.8-1c.4 0 1 .1 1.5.1h6.4c3.2 0 4.9-.5 5.9-2.1 0 0
+            4.4-6.8 4.5-7 .3-.6.2-1.1-.1-1.4l3.2-1.8zm-15.3 3.1c.4-.6 1.6-.7
+            2.5-.7h5.5l-12.6 7.2c.9-1.3 4.6-6.5 4.6-6.5zm4.2
+            7.1c-.3.4-.9.6-1.7.6h-6l11.9-6.8c-1.1 1.7-3.7 5.5-4.2 6.2z"></path>
+          </g>
+        </svg></a>
+
+      <a href="https://admin.oredev.org/planner#" data-activates="nav-mobile" class="button-collapse right"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <i class="material-icons left">history</i>
+        <li class="conference-selector">
+          <div class="input-field">
+            
+            <div class="select-wrapper filter-conferencename initialized"><span class="caret">▼</span><input type="text" class="select-dropdown" readonly="true" data-activates="select-options-f1fe9be3-f930-5a0d-71ae-fc6fd8b9ef5f" value="Øredev 2019"><ul id="select-options-f1fe9be3-f930-5a0d-71ae-fc6fd8b9ef5f" class="dropdown-content select-dropdown"><li class=""><span>Øredev 2019</span></li><li class=""><span>Øredev 2018</span></li></ul><select class="filter-conferencename initialized" id="filterConferenceName" data-select-id="f1fe9be3-f930-5a0d-71ae-fc6fd8b9ef5f">
+              <option value="Øredev 2019">Øredev 2019</option>
+              
+              <option value="Øredev 2018">Øredev 2018</option>
+              
+            </select></div>
+            
+          </div>
+        </li>
+        <li class=""><a href="https://admin.oredev.org/stats"><i class="material-icons left">insert_chart</i> Stats</a></li>
+        <li class=""><a href="https://admin.oredev.org/speakers"><i class="material-icons left">face</i> Speakers</a></li>
+        <li class=""><a href="https://admin.oredev.org/sessions"><i class="material-icons left">record_voice_over</i> Sessions</a></li>
+        
+        <li class="active"><a href="https://admin.oredev.org/planner"><i class="material-icons left">view_week</i> Planner</a></li>
+        <li><a href="https://admin.oredev.org/admin-votes"><i class="material-icons left">sentiment_very_satisfied</i> Votes</a></li>
+        
+        <li><a href="https://admin.oredev.org/planner#" class="dropdown-button" data-constrainwidth="false" data-alignment="right" data-activates="dropdownAdmin">T P<i class="material-icons right">arrow_drop_down</i></a><ul id="dropdownAdmin" class="dropdown-content">
+    
+  <li>
+    <a href="https://admin.oredev.org/users"><i class="material-icons">people_outline</i> Users</a>
+  </li>
+  <li>
+    <a href="https://admin.oredev.org/settings"><i class="material-icons">settings</i>Settings</a>
+  </li>
+  <li>
+    <a href="https://admin.oredev.org/emails" class=""><i class="material-icons">email</i>Emails</a>
+  </li>
+  
+  <li class="divider"></li>
+  <li><a href="https://admin.oredev.org/signin" class="logout"><i class="material-icons">beach_access</i>Logout</a></li>
+  </ul></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
+        <li class=""><a href="https://admin.oredev.org/stats"><i class="material-icons left">insert_chart</i> Stats</a></li>
+        <li class=""><a href="https://admin.oredev.org/speakers"><i class="material-icons left">face</i> Speakers</a></li>
+        <li class=""><a href="https://admin.oredev.org/sessions"><i class="material-icons left">record_voice_over</i> Sessions</a></li>
+        
+        <li class="active"><a href="https://admin.oredev.org/planner"><i class="material-icons left">view_week</i> Planner</a></li>
+        <li><a href="https://admin.oredev.org/admin-votes"><i class="material-icons left">sentiment_very_satisfied</i> Votes</a></li>
+        
+        <li><a href="https://admin.oredev.org/planner#" class="dropdown-button" data-constrainwidth="true" data-alignment="center" data-activates="dropdownAdminMob">T P<i class="material-icons right">arrow_drop_down</i></a><ul id="dropdownAdminMob" class="dropdown-content">
+    
+  <li>
+    <a href="https://admin.oredev.org/users"><i class="material-icons">people_outline</i> Users</a>
+  </li>
+  <li>
+    <a href="https://admin.oredev.org/settings"><i class="material-icons">settings</i>Settings</a>
+  </li>
+  <li>
+    <a href="https://admin.oredev.org/emails" class=""><i class="material-icons">email</i>Emails</a>
+  </li>
+  
+  <li class="divider"></li>
+  <li><a href="https://admin.oredev.org/signin" class="logout"><i class="material-icons">beach_access</i>Logout</a></li>
+  </ul></li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  
+  </header>
+  <main>
+    
+  
+    
+    
+    
+    <div class="row">
+    <div class="col s12">
+      <a class="publish-schedule waves-effect waves-light btn right"><i class="material-icons left">public</i>Publish schedule</a>
+      <!--a class="btn new-session update-speakers"><i class="material-icons left">update</i>Update all speakers</a-->
+      <!--a class="btn new-session update-sessions"><i class="material-icons left">update</i>Update all sessions</a-->
+      <!--a class="btn new-session stamp-all"><i class="material-icons left">update</i>Stamp All</a-->
+    </div>
+  </div>
+  <div class="planner-wrapper">
+    <ul id="sessionlist" class="session-container">
+      <li class="center-align"><h5 class="dayheadline white-text">Sessions</h5></li>
+      
+      <li class="planning-complete grey-text center-align"><h6>Wooohooo!</h6><i class="large material-icons">cake</i> <h6>Well done</h6> </li>
+      
+    </ul>
+
+    <div class="table-container">
+      
+      <h5 data-day="2" class="dayheadline white-text dayheadline-toggle"><i data-day="2" class="material-icons dayheadline-toggle left">expand_less</i>Tuesday
+      </h5>
+
+      <div class="day-wrapper" div="" id="2">
+        <table class="bordered">
+          <thead>
+            <tr>
+              <th>Time</th>
+              
+              <th class="roomheader">
+                Envy
+              </th>
+              
+              <th class="roomheader">
+                Gluttony
+              </th>
+              
+              <th class="roomheader">
+                Greed
+              </th>
+              
+              <th class="roomheader">
+                Lust
+              </th>
+              
+              <th class="roomheader">
+                Pride
+              </th>
+              
+              <th class="roomheader">
+                Sloth
+              </th>
+              
+              <th class="roomheader">
+                Wrath
+              </th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="startingtime">
+                <div>08:30</div>
+              </td>
+              
+              <td>
+
+                <div id="§w5DakLCR7hRdXmtmh§SMpH8XCoBZXKY5f9n§1" class="container slotbox" style="height:570px">
+                  
+                  <div data-speaker-id="xdWHNRBdXD4NCm2cB" data-session-title="Java.Next: Keeping Up with Java" id="inxceG6hnjvbM4swa" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:468px;">
+                      <span class="card-title sessiontitle">Java.Next: Keeping Up with Java</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Sander Mak</span>
+                      <span class="right">JVM</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§w5DakLCR7hRdXmtmh§AgyfqDGL2sPCs4Ycj§1" class="container slotbox" style="height:570px">
+                  
+                  <div data-speaker-id="5xKB6JjEMiSGwWQzt" data-session-title="Requirements, User Stories and Backlogs" id="kKHeHmHjHEm9Z9L9T" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:468px;">
+                      <span class="card-title sessiontitle">Requirements, User Stories and Backlogs</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Allan Kelly</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§w5DakLCR7hRdXmtmh§Z569Ch8xnaEsMZjir§1" class="container slotbox" style="height:570px">
+                  
+                  <div data-speaker-id="SNr7s9ZQraiMYeZz5" data-session-title="Half-day workshop on visual thinking" id="9tz9RYZDm6Qj3299s" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:468px;">
+                      <span class="card-title sessiontitle">Half-day workshop on visual thinking</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Yuri Malishenko</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§w5DakLCR7hRdXmtmh§eWnqdASsnFYcsWrZC§1" class="container slotbox" style="height:570px">
+                  
+                  <div data-speaker-id="zPpDAbJmziYcFRrsg" data-session-title="Getting started with Threat Modeling" id="Fs22KGNYh4fNH9sHJ" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:468px;">
+                      <span class="card-title sessiontitle">Getting started with Threat Modeling</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Erlend Oftedal</span>
+                      <span class="right">Security</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§w5DakLCR7hRdXmtmh§LYCz3myi2sMKuztYB§1" class="container slotbox" style="height:570px">
+                  
+                  <div data-speaker-id="FLZutZfTwPSvYP7me" data-session-title="Azure Kubernetes" id="qiGmipHK95rD7Qghe" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:468px;">
+                      <span class="card-title sessiontitle">Azure Kubernetes</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Drazen Dodik</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§w5DakLCR7hRdXmtmh§mLsppTucSgZEvLukS§1" class="container slotbox" style="height:570px">
+                  
+                  <div data-speaker-id="HhLRZYfkzmG6Popze" data-session-title="Kubernetes AppOps with Istio" id="6PesRcuKK4EvmznP5" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:468px;">
+                      <span class="card-title sessiontitle">Kubernetes AppOps with Istio</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Anders Enqvist</span>
+                      <span class="right">Cloud</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§w5DakLCR7hRdXmtmh§fcC2ASEZqJbm2mzhT§1" class="container slotbox" style="height:570px">
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+          </tbody>
+
+        </table>
+      </div>
+
+      
+      <h5 data-day="3" class="dayheadline white-text dayheadline-toggle"><i data-day="3" class="material-icons dayheadline-toggle left">expand_less</i>Wednesday
+      </h5>
+
+      <div class="day-wrapper" div="" id="3">
+        <table class="bordered">
+          <thead>
+            <tr>
+              <th>Time</th>
+              
+              <th class="roomheader">
+                Envy
+              </th>
+              
+              <th class="roomheader">
+                Gluttony
+              </th>
+              
+              <th class="roomheader">
+                Greed
+              </th>
+              
+              <th class="roomheader">
+                Lust
+              </th>
+              
+              <th class="roomheader">
+                Pride
+              </th>
+              
+              <th class="roomheader">
+                Sloth
+              </th>
+              
+              <th class="roomheader">
+                Wrath
+              </th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="startingtime">
+                <div>09:00</div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§SMpH8XCoBZXKY5f9n§1" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="HgTifnG5Z98kNzg5C" data-session-title="Socio-Technical Modeling as a Practice" id="iRXWzhQQiJ4AML687" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Socio-Technical Modeling as a Practice</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Michael Feathers</span>
+                      <span class="right">Keynote</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§AgyfqDGL2sPCs4Ycj§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§Z569Ch8xnaEsMZjir§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§eWnqdASsnFYcsWrZC§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§LYCz3myi2sMKuztYB§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§mLsppTucSgZEvLukS§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§fcC2ASEZqJbm2mzhT§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>10:30</div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§SMpH8XCoBZXKY5f9n§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="S7rLCypgMemqsytyF" data-session-title="Functional Programming in Kotlin" id="oHftjiJffCatwuX2Z" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Functional Programming in Kotlin</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Hadi Hariri</span>
+                      <span class="right">JVM</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§AgyfqDGL2sPCs4Ycj§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="5xKB6JjEMiSGwWQzt" data-session-title="Evolution from #NoProjects to Continuous Digital" id="Wcaszia3BgQ2YAohq" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Evolution from #NoProjects to Continuous Digital</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Allan Kelly</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§Z569Ch8xnaEsMZjir§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="3uNwbMTQcqjo86DHj" data-session-title="STAR Apps - Design Systems, TypeScript, Apollo GraphQL, and ..." id="hoR6MXSToKJjYHxBy" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">STAR Apps - Design Systems, TypeScript, Apollo GraphQL, and ...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Shawn Wang</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§eWnqdASsnFYcsWrZC§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="ihZJKDPSqxRsJth3S" data-session-title="GitOps in action" id="5DavK2f42TohSJxQv" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">GitOps in action</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Jimmy Dahlqvist</span>
+                      <span class="right">DevOps</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§LYCz3myi2sMKuztYB§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="4pc8wp7SbkbcyrtiF" data-session-title="Improving with C# 8.0" id="3Xz8iNTuqdgNmaXAB" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Improving with C# 8.0</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Filip Ekberg</span>
+                      <span class="right">.NET</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§mLsppTucSgZEvLukS§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="e8FKBAmNmKP8q7iq2" data-session-title="Automate All The Things!" id="WiYsY4zMcEeNza66k" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Automate All The Things!</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Nate Ebel</span>
+                      <span class="right">Android</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§fcC2ASEZqJbm2mzhT§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="HL7DaTKuGbwZnWtFw" data-session-title="Social Implications of Bias in Machine Learning" id="vZsrHurGJGJN988Yf" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Social Implications of Bias in Machine Learning</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Fiona Coath</span>
+                      <span class="right">Data Science</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>11:30</div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§SMpH8XCoBZXKY5f9n§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="2kipvhvysCchv527r" data-session-title="Learning in Continuous Experimentation: How we figure out wh..." id="DahrZBgT6sRc2gs84" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Learning in Continuous Experimentation: How we figure out wh...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Pratik Nadagouda</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§AgyfqDGL2sPCs4Ycj§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="NbEe4PeuLv76Bdodr" data-session-title="Understanding Test Driven Development with Javascript" id="fjoKNgDEJrinJS5vF" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Understanding Test Driven Development with Javascript</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Roy Osherove</span>
+                      <span class="right">Quality &amp; Test</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§Z569Ch8xnaEsMZjir§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="r2KC5CMtoc4mqXZQx" data-session-title="Every other week reteaming - a case study" id="Me6zY2HSW5CyCwBsz" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Every other week reteaming - a case study</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Pia Fåk Sunnanbo</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§eWnqdASsnFYcsWrZC§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="a8awnC3r6K7FDKMc6" data-session-title="Web Components are your Framework&#39;s Best Friend" id="TfKi99q7bS3Sjjb7T" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Web Components are your Framework's Best Friend</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Filip Bech-Larsen</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§LYCz3myi2sMKuztYB§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="4p4NYbNKJQKXsf9wD" data-session-title="You have a security problem - your users" id="XR2Rk4pG4kXvxhdei" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">You have a security problem - your users</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Sebastian Wallin</span>
+                      <span class="right">Security</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§mLsppTucSgZEvLukS§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="ZQSdXuaTacGfytaSL" data-session-title="Intro to Kotlin Multiplatform" id="AQf36gf9zQ58tRCvt" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Intro to Kotlin Multiplatform</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Kevin Galligan</span>
+                      <span class="right">Polyglot &amp; Fringe</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§fcC2ASEZqJbm2mzhT§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="5XcPoNovhJTz7FCdo" data-session-title="Refactoring to CQRS" id="33LCdWWhg4zFmFmej" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Refactoring to CQRS</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Toni Petrina</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>13:00</div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§SMpH8XCoBZXKY5f9n§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="GtDseL7vvg7Xe88GC" data-session-title="Flow, microservices and scale" id="NrhAQSg34wojNckRZ" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Flow, microservices and scale</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>James Lewis</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§AgyfqDGL2sPCs4Ycj§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="xdWHNRBdXD4NCm2cB" data-session-title="Keeping Up with Java" id="JWLQgjfkf2L98Fd7k" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Keeping Up with Java</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Sander Mak</span>
+                      <span class="right">JVM</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§Z569Ch8xnaEsMZjir§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="nGfmh6XLZmKdNR9oo" data-session-title="Testing in Production" id="SQM8N5EQXAmGLrRWg" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Testing in Production</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Talia Nassi</span>
+                      <span class="right">Quality &amp; Test</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§eWnqdASsnFYcsWrZC§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="LfQJQNK52J4NfGJY8" data-session-title="How to Hack OAuth" id="jFtTHmc94ZdcSawSw" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">How to Hack OAuth</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Aaron Parecki</span>
+                      <span class="right">Security</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§LYCz3myi2sMKuztYB§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="TnEHgJbaR34fCpBS2" data-session-title="Agile Leadership and HR in a Nutshell" id="KJZ4dBMGFnCpkTA4B" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Agile Leadership and HR in a Nutshell</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Pia-Maria Thoren</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§mLsppTucSgZEvLukS§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="66Kb9h2B3e3hwSSnK" data-session-title="AI + AR = SuperPowers!" id="bCGFjhWH6S73CrGXf" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">AI + AR = SuperPowers!</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>András Velvárt</span>
+                      <span class="right">AR &amp; VR</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§fcC2ASEZqJbm2mzhT§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="hM2ssMNoxL3DQtu6d" data-session-title="Full Stack Web in F#" id="nCZXZLvhH2RypnZMc" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Full Stack Web in F#</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Tomasz Heimowski</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>14:00</div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§SMpH8XCoBZXKY5f9n§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="NbEe4PeuLv76Bdodr" data-session-title="The Pipeline Driven Organization — Enabling True Continuous ..." id="mNaaj74m2hWrSrKPT" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">The Pipeline Driven Organization — Enabling True Continuous ...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Roy Osherove</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§AgyfqDGL2sPCs4Ycj§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="5xKB6JjEMiSGwWQzt" data-session-title="Mission Impossible: The Product Owner" id="Ki2MvzAoBMzPGhQym" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Mission Impossible: The Product Owner</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Allan Kelly</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§Z569Ch8xnaEsMZjir§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="7QD86b9prvKo3TNcZ" data-session-title="What&#39;s In A Model?" id="T6dn9cR8ce4MqgBkx" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">What's In A Model?</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Asbjørn Ulsberg</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§eWnqdASsnFYcsWrZC§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="iFYuRjzFX734bwR8w" data-session-title="Jenkins X: Progressive Delivery for Kubernetes" id="YGFxhDGmnLrJ5N2xC" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Jenkins X: Progressive Delivery for Kubernetes</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Carlos Sanchez</span>
+                      <span class="right">DevOps</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§LYCz3myi2sMKuztYB§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="viBm2MgXKLZGqYgr5" data-session-title="On Track with Apache Kafka: Building a Streaming ETL solutio..." id="Z7LWby4pymo2XRLgB" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">On Track with Apache Kafka: Building a Streaming ETL solutio...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Robin Moffatt</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§mLsppTucSgZEvLukS§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="64mcrbZwk2hWJL3jR" data-session-title="Building an ARt Gallery in the Browser" id="Da7xut4bNeNue5ajh" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Building an ARt Gallery in the Browser</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Doug Sillars</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§fcC2ASEZqJbm2mzhT§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="ZQSdXuaTacGfytaSL" data-session-title="Kotlin Multiplatform Library Development" id="JqyHordXmCYPce7A2" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Kotlin Multiplatform Library Development</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Kevin Galligan</span>
+                      <span class="right">Polyglot &amp; Fringe</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>15:20</div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§SMpH8XCoBZXKY5f9n§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="K46YDqLTyqJ3GnfZy" data-session-title="How shit works: Time" id="f8aetAxeehY3ALNj6" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">How shit works: Time</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Tomer Gabel</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§AgyfqDGL2sPCs4Ycj§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="HSomuNBWpNAH23kSa" data-session-title="Being the best or being good: Can we still build technology ..." id="fYgQjoSDPKX9PioDe" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Being the best or being good: Can we still build technology ...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Emily Gorcenski</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§Z569Ch8xnaEsMZjir§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="ZiWXDbLuGZGjdetgn" data-session-title="Lean Start-Up for Refugees or How we introduced Agile to the..." id="pwBpk3bBtMczjYbEK" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Lean Start-Up for Refugees or How we introduced Agile to the...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Stephanie Gasche</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§eWnqdASsnFYcsWrZC§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="qoDQq7XFTwLfyofyu" data-session-title="Python for .net developers" id="oj7yBFy5ekriYEvyT" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Python for .net developers</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Dennis Vroegop</span>
+                      <span class="right">.NET</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§LYCz3myi2sMKuztYB§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="Se4zdgnMwbbjb7dsS" data-session-title="Hacking Humans : Social Engineering Techniques and How to Pr..." id="nBgdekzFDPW4noQhr" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Hacking Humans : Social Engineering Techniques and How to Pr...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Stephen Haunts</span>
+                      <span class="right">Security</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§mLsppTucSgZEvLukS§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="xaB53p4Aq4qS9LS2K" data-session-title="Smarten up your pipeline and reduce test execution time" id="JomXY4EGrohjaETM6" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Smarten up your pipeline and reduce test execution time</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Bart Szulc</span>
+                      <span class="right">Quality &amp; Test</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§fcC2ASEZqJbm2mzhT§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="fMeBdM88HcC8ghPaQ" data-session-title="Modern development in traditional retail." id="FY5eYb38vEt4NCAXs" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Modern development in traditional retail.</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Claes Adamsson</span>
+                      <span class="right">DevOps</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>16:20</div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§SMpH8XCoBZXKY5f9n§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="CTxgARkXw5Pcn3Yct" data-session-title="A reasonable guide to security practices" id="gSuGNFbC66Zpih5Sp" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">A reasonable guide to security practices</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Niall Merrigan</span>
+                      <span class="right">Security</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§AgyfqDGL2sPCs4Ycj§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="viBm2MgXKLZGqYgr5" data-session-title="The Changing Face of ETL: Event-Driven Architectures for Dat..." id="Fai2b33R3TSaqCzJv" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">The Changing Face of ETL: Event-Driven Architectures for Dat...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Robin Moffatt</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§Z569Ch8xnaEsMZjir§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="BStTxAuT2a7DBqPDE" data-session-title="Integration testing a cloud-native application with JavaScri..." id="d2ybeHPcb46E8qNk3" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Integration testing a cloud-native application with JavaScri...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Markus Tacker</span>
+                      <span class="right">Quality &amp; Test</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§eWnqdASsnFYcsWrZC§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="TaBkM5Xv5JuBezsde" data-session-title="The Good, The Bad, The Ugly: Technology in the Refugee Aid M..." id="CLLtmXyWdRuthGNz9" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">The Good, The Bad, The Ugly: Technology in the Refugee Aid M...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Taylor Fairbank</span>
+                      <span class="right">Polyglot &amp; Fringe</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§LYCz3myi2sMKuztYB§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="S7rLCypgMemqsytyF" data-session-title="Introduction to Ktor" id="Cv3gz9SjidF6EeyaM" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Introduction to Ktor</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Hadi Hariri</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§mLsppTucSgZEvLukS§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="QHcyG2vbSte2gh4te" data-session-title="IoT is fun with MicroPython" id="hTaFRvfocPQQSBvgn" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">IoT is fun with MicroPython</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Sebastian Roll</span>
+                      <span class="right">Polyglot &amp; Fringe</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§fcC2ASEZqJbm2mzhT§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="KJcQk69vRXeQ4ZEwy" data-session-title="The Tricks of Game Programming in a Pure Functional Language..." id="eEfZgJbGW3j7y4cW4" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">The Tricks of Game Programming in a Pure Functional Language...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Jordy Moos</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>17:30</div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§SMpH8XCoBZXKY5f9n§8" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="SnpL9fmuN6YrjN2cZ" data-session-title="Psychotherapy for Code" id="qxicuCDFfoFaHRYjf" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Psychotherapy for Code</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Adam Tornhill</span>
+                      <span class="right">Keynote</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§AgyfqDGL2sPCs4Ycj§8" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§Z569Ch8xnaEsMZjir§8" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§eWnqdASsnFYcsWrZC§8" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§LYCz3myi2sMKuztYB§8" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§mLsppTucSgZEvLukS§8" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§fcC2ASEZqJbm2mzhT§8" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>18:20</div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§SMpH8XCoBZXKY5f9n§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§AgyfqDGL2sPCs4Ycj§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§Z569Ch8xnaEsMZjir§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§eWnqdASsnFYcsWrZC§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§LYCz3myi2sMKuztYB§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§mLsppTucSgZEvLukS§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§BY2nw4rwaXrEzuqgg§fcC2ASEZqJbm2mzhT§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+          </tbody>
+
+        </table>
+      </div>
+
+      
+      <h5 data-day="4" class="dayheadline white-text dayheadline-toggle"><i data-day="4" class="material-icons dayheadline-toggle left">expand_less</i>Thursday
+      </h5>
+
+      <div class="day-wrapper" div="" id="4">
+        <table class="bordered">
+          <thead>
+            <tr>
+              <th>Time</th>
+              
+              <th class="roomheader">
+                Envy
+              </th>
+              
+              <th class="roomheader">
+                Gluttony
+              </th>
+              
+              <th class="roomheader">
+                Greed
+              </th>
+              
+              <th class="roomheader">
+                Lust
+              </th>
+              
+              <th class="roomheader">
+                Pride
+              </th>
+              
+              <th class="roomheader">
+                Sloth
+              </th>
+              
+              <th class="roomheader">
+                Wrath
+              </th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="startingtime">
+                <div>09:00</div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§SMpH8XCoBZXKY5f9n§1" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="ii2eBYXigukEKikdt" data-session-title="We Killed These Things With Fire: economics, society and sys..." id="oMrkHgeP28iEXxKya" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">We Killed These Things With Fire: economics, society and sys...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Marianne Bellotti</span>
+                      <span class="right">Keynote</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§AgyfqDGL2sPCs4Ycj§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§Z569Ch8xnaEsMZjir§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§eWnqdASsnFYcsWrZC§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§LYCz3myi2sMKuztYB§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§mLsppTucSgZEvLukS§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§fcC2ASEZqJbm2mzhT§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>10:30</div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§SMpH8XCoBZXKY5f9n§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="NjYt9D5evedGQmCJk" data-session-title="The Story of why we migrate to gRPC and how we go about it" id="3zedvQeQYqeYj2Qst" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">The Story of why we migrate to gRPC and how we go about it</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Matthias Grüter</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§AgyfqDGL2sPCs4Ycj§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="aSde9K6Kq3o7raCMM" data-session-title="Kotlin DSL in under an hour" id="pSnMNmKifyQvDiDux" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Kotlin DSL in under an hour</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Anton Arhipov</span>
+                      <span class="right">JVM</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§Z569Ch8xnaEsMZjir§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="6BPRckBSS7d3jh7tc" data-session-title="Everyone can Data! - A Practical Data Science Intro" id="q5TovmqLcx5syCkef" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Everyone can Data! - A Practical Data Science Intro</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Dalya Gartzman</span>
+                      <span class="right">Data Science</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§eWnqdASsnFYcsWrZC§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="2kipvhvysCchv527r" data-session-title="Increase your .NET Productivity with Visual Studio 2019" id="pdKTTyLekzusxSHXE" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Increase your .NET Productivity with Visual Studio 2019</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Pratik Nadagouda</span>
+                      <span class="right">.NET</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§LYCz3myi2sMKuztYB§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="64mcrbZwk2hWJL3jR" data-session-title="Fast and Beautiful: Modern Image Delivery Techniques" id="58EmCCaDRTNd2yAJi" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Fast and Beautiful: Modern Image Delivery Techniques</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Doug Sillars</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§mLsppTucSgZEvLukS§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="E5eYwXv3SoNmyuNjM" data-session-title="Test Automation without Assertions" id="p8TqF6pNtbcbJTxLz" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Test Automation without Assertions</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Jeremias Rößler</span>
+                      <span class="right">Quality &amp; Test</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§fcC2ASEZqJbm2mzhT§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="2f4kXL9kGbSqmfrY8" data-session-title="Building smarter solutions with machine learning, from magic..." id="q8PorwAoAGdfPMv5R" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Building smarter solutions with machine learning, from magic...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Laurent Picard</span>
+                      <span class="right">Cloud</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>11:30</div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§SMpH8XCoBZXKY5f9n§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-otherspeaker-id="s9mbc6zRH7GQY5mug" data-speaker-id="RgyGhE8Ed22qLTs2J" data-session-title="Inclusive Architecture — Building a Sustainable Dev Team thr..." id="r8sG4Kk8DawZmksbe" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Inclusive Architecture — Building a Sustainable Dev Team thr...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Tracy Lee</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§AgyfqDGL2sPCs4Ycj§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="M3bm5z39edimECyjc" data-session-title="Is DevOps Still Relevant In A Cloud Native World? (Enterpris..." id="JxWqmQ9YEgGkjenS6" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Is DevOps Still Relevant In A Cloud Native World? (Enterpris...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Jez Humble</span>
+                      <span class="right">DevOps</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§Z569Ch8xnaEsMZjir§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="soXiQwaGKxZt3rD6K" data-session-title="How Eyetracking can be Beginning of the End of Privacy" id="3ebRHfk4WA9NTQ6Ms" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">How Eyetracking can be Beginning of the End of Privacy</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Azad Balabanian</span>
+                      <span class="right">AR &amp; VR</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§eWnqdASsnFYcsWrZC§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="Qdf8FnnrcaH9FBoXk" data-session-title="Conflict resolution" id="funS3mh4tt9jxmttx" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Conflict resolution</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>James Coglan</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§LYCz3myi2sMKuztYB§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="Ep8bQRZXAuzGu6TeH" data-session-title="Goodbye client side JavaScript, Hello C#&#39;s Blazor" id="adasuZT2sMHNnwRRb" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Goodbye client side JavaScript, Hello C#'s Blazor</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Ed Charbeneau</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§mLsppTucSgZEvLukS§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="PCGHHhB4jgYb8p6hE" data-session-title="Inside a hacker’s mind: Apache Struts, Serverless, and, Stor..." id="K7mYFSSwpb8uoLoaN" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Inside a hacker’s mind: Apache Struts, Serverless, and, Stor...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Maria Shoaib</span>
+                      <span class="right">Security</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§fcC2ASEZqJbm2mzhT§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="4jTYidtHWHubf5BfT" data-session-title="The Unreasonable Effectiveness of Monads" id="eW8mvEdYNXBAiEFxG" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">The Unreasonable Effectiveness of Monads</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Brooklyn Zelenka</span>
+                      <span class="right">Polyglot &amp; Fringe</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>13:00</div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§SMpH8XCoBZXKY5f9n§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="zPpDAbJmziYcFRrsg" data-session-title="Introduction to Threat Modeling" id="XMKznQ3cCg3pqnrCB" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Introduction to Threat Modeling</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Erlend Oftedal</span>
+                      <span class="right">Security</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§AgyfqDGL2sPCs4Ycj§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="EMh8KPMzGanbQazEZ" data-session-title="100,000 Orange Stickies Later" id="QpopCsfNRAhLehcCe" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">100,000 Orange Stickies Later</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Alberto Brandolini</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§Z569Ch8xnaEsMZjir§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="K46YDqLTyqJ3GnfZy" data-session-title="Microservices: A retrospective" id="2JYEu7D5pLe8u3z5u" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Microservices: A retrospective</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Tomer Gabel</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§eWnqdASsnFYcsWrZC§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="ZiWXDbLuGZGjdetgn" data-session-title="Measuring Performance - Quantifying the Work of a Scrum Mast..." id="T6A36sz6oJY3w5MdF" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Measuring Performance - Quantifying the Work of a Scrum Mast...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Stephanie Gasche</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§LYCz3myi2sMKuztYB§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="oLYNnmPGtDxKetWih" data-session-title="Elixir &amp; Phoenix – Fast, Concurrent and Explicit" id="JBNjQJNw3K5KLxaow" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Elixir &amp; Phoenix – Fast, Concurrent and Explicit</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Tobias Pfeiffer</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§mLsppTucSgZEvLukS§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="jPgwMCMunhwwNHrYq" data-session-title="Getting Started with AndroidX Test" id="rTTKpYiLR8CaiLumS" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Getting Started with AndroidX Test</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Victoria Gonda</span>
+                      <span class="right">Android</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§fcC2ASEZqJbm2mzhT§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="bLPCxCvNdnbLpembc" data-session-title="Blockchain and cryptocurrencies - a deep dive" id="uBgMzesCJurZDQb7Z" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Blockchain and cryptocurrencies - a deep dive</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Badi Sudhakaran</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>14:00</div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§SMpH8XCoBZXKY5f9n§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="CggcsE3gQQuXcAxWb" data-session-title="Eventually, time will kill your data processing" id="TWv2sonDaJ3e9wNjX" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Eventually, time will kill your data processing</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Lars Albertsson</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§AgyfqDGL2sPCs4Ycj§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="H9NfwsJiG2KbL87eM" data-session-title="Diversity of Thought: The Key to Innovation" id="aYAbxRcJbyTMiHPDW" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Diversity of Thought: The Key to Innovation</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Carmen Medina</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§Z569Ch8xnaEsMZjir§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="RgyGhE8Ed22qLTs2J" data-session-title="RXJS - OPERATOR, WHAT’S YOUR REAL WORLD USE CASE? IMPORTANT ..." id="GyveHkwCEhfttdwNf" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">RXJS - OPERATOR, WHAT’S YOUR REAL WORLD USE CASE? IMPORTANT ...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Tracy Lee</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§eWnqdASsnFYcsWrZC§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="wd6SEPmecZixqoBdj" data-session-title="Observability of distributed systems" id="TMQvoooSSRXSryZP2" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Observability of distributed systems</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>José Carlos Chávez</span>
+                      <span class="right">DevOps</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§LYCz3myi2sMKuztYB§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="uH9FNpuRwdEvbzph2" data-session-title="Psyched about Outcomes" id="3bHsfpvo6XYMAaHAq" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Psyched about Outcomes</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Margaret Dineen</span>
+                      <span class="right">Quality &amp; Test</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§mLsppTucSgZEvLukS§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="KdA4kDMLfqFy5r3yN" data-session-title="Dependency injection for Kotlin apps with Koin" id="PARZLLW9QzD93ZTui" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Dependency injection for Kotlin apps with Koin</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Arnaud Giuliani</span>
+                      <span class="right">Android</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§fcC2ASEZqJbm2mzhT§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="YsroKFh7P7YzRDA5R" data-session-title="From Caesar Cipher To Quantum Cryptography" id="PTDNnKGBArxYCG4Mg" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">From Caesar Cipher To Quantum Cryptography</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Joel Lord</span>
+                      <span class="right">Polyglot &amp; Fringe</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>15:20</div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§SMpH8XCoBZXKY5f9n§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="mBbzWBerTskAB4hRa" data-session-title="The engine of successful companies — engaged and motivated t..." id="RfThJ4visfYXzhAfw" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">The engine of successful companies — engaged and motivated t...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Niklas Modig</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§AgyfqDGL2sPCs4Ycj§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="zPpDAbJmziYcFRrsg" data-session-title="Modern WebApp Vulnerabilities" id="GfWyW5zswnTBjh9m7" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Modern WebApp Vulnerabilities</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Erlend Oftedal</span>
+                      <span class="right">Security</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§Z569Ch8xnaEsMZjir§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="xkecCKMfPcdB8YFuG" data-session-title="Doing .NET in that other cloud" id="uPNqqw27sbH7zMNJc" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Doing .NET in that other cloud</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Fredrik Mörk</span>
+                      <span class="right">.NET</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§eWnqdASsnFYcsWrZC§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-otherspeaker-id="K46YDqLTyqJ3GnfZy,ii2eBYXigukEKikdt,GtDseL7vvg7Xe88GC" data-speaker-id="9bcN2JWhimyZa2qBt" data-session-title="Architecture panel with James Lewis, Marianne Bellotti, and ..." id="HpjJboc7ifjWc2L2w" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Architecture panel with James Lewis, Marianne Bellotti, and ...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Øredev Øredevsson</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§LYCz3myi2sMKuztYB§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="a6moxocyetj9u4qjC" data-session-title="Recommendations at scale with Elastic Search" id="MnHoSpRAzxFEzBrNT" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Recommendations at scale with Elastic Search</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Omri Fima</span>
+                      <span class="right">Data Science</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§mLsppTucSgZEvLukS§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="jPgwMCMunhwwNHrYq" data-session-title="Customize Your App with MLKit" id="m7QXdacMTBJX23pXT" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Customize Your App with MLKit</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Victoria Gonda</span>
+                      <span class="right">Android</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§fcC2ASEZqJbm2mzhT§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="4jTYidtHWHubf5BfT" data-session-title="A Universal &quot;Hostless&quot; Substrate for a Post-Serverless Futur..." id="8vbLzGgZ6kyhsr5Nk" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">A Universal "Hostless" Substrate for a Post-Serverless Futur...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Brooklyn Zelenka</span>
+                      <span class="right">Polyglot &amp; Fringe</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>16:20</div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§SMpH8XCoBZXKY5f9n§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="H9NfwsJiG2KbL87eM" data-session-title="So You Want to Be a Change Agent: A Survival Guide" id="8fzQuR8PubbHSi7K5" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">So You Want to Be a Change Agent: A Survival Guide</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Carmen Medina</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§AgyfqDGL2sPCs4Ycj§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="SRMxGNg3LoxaqJGZE" data-session-title="Developing for Everyone" id="STtnT8E8DhGLxBvRC" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Developing for Everyone</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Sergei Kriger</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§Z569Ch8xnaEsMZjir§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="rfuuiXZeypMSkDTdb" data-session-title="Real-Time Architecture and Practices for Modern ASP.NET Core..." id="vkvJFEthad2CD25PZ" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Real-Time Architecture and Practices for Modern ASP.NET Core...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Tomasz Pęczek</span>
+                      <span class="right">.NET</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§eWnqdASsnFYcsWrZC§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="taX43xSgjnzJiyEeE" data-session-title="All our aggregates are wrong" id="Qcj4qiuBZEzMXPsxy" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">All our aggregates are wrong</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Mauro Servienti</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§LYCz3myi2sMKuztYB§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="cX3FRFEJ83KacYn5R" data-session-title="Live Coding Kotlin/Native Snake" id="tmsdPPHxFDTwHteXu" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Live Coding Kotlin/Native Snake</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Dmitry Kandalov</span>
+                      <span class="right">Polyglot &amp; Fringe</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§mLsppTucSgZEvLukS§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="LfQJQNK52J4NfGJY8" data-session-title="Smarter Home Automation without the Cloud" id="Sk3DEYqoYcmsANH8Z" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Smarter Home Automation without the Cloud</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Aaron Parecki</span>
+                      <span class="right">Polyglot &amp; Fringe</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§fcC2ASEZqJbm2mzhT§7" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="yjQhrdCkY7hWDEEKC" data-session-title="Escher in Elm: Picture combinators and recursive fish" id="3rCf4WRvfX2PW7qEG" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Escher in Elm: Picture combinators and recursive fish</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Einar Høst</span>
+                      <span class="right">Polyglot &amp; Fringe</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>17:20</div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§SMpH8XCoBZXKY5f9n§8" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="M3bm5z39edimECyjc" data-session-title="The Secrets of High Performing Technology Organizations" id="tLTEC6EALfCgzddbh" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">The Secrets of High Performing Technology Organizations</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Jez Humble</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§AgyfqDGL2sPCs4Ycj§8" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="TbRSEoq34Sf3ZbYiJ" data-session-title="Human + Machine Learning" id="g2p3gMakMW3wnDAaD" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Human + Machine Learning</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Mike Wolfson</span>
+                      <span class="right">Polyglot &amp; Fringe</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§Z569Ch8xnaEsMZjir§8" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="Ep8bQRZXAuzGu6TeH" data-session-title="Giving Clarity to LINQ Queries by Extending Expressions" id="hQTWP37yTxQMFnGDp" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Giving Clarity to LINQ Queries by Extending Expressions</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Ed Charbeneau</span>
+                      <span class="right">.NET</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§eWnqdASsnFYcsWrZC§8" class="container slotbox" style="height:90px">
+                  
+                  <div data-otherspeaker-id="64mcrbZwk2hWJL3jR,RgyGhE8Ed22qLTs2J,3uNwbMTQcqjo86DHj" data-speaker-id="9bcN2JWhimyZa2qBt" data-session-title="Web panel with Doug Sillars, Shawn Wang, and Tracy Lee" id="skxNYzPAbiAJKM97E" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Web panel with Doug Sillars, Shawn Wang, and Tracy Lee</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Øredev Øredevsson</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§LYCz3myi2sMKuztYB§8" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="RLBW72TrNpdnia6Nn" data-session-title="The psychology of communicating online" id="ovywApWFrZSRiZK53" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">The psychology of communicating online</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Joanne Meredith</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§mLsppTucSgZEvLukS§8" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="TwiE9d99vvH6wD8y4" data-session-title="How not to read the room: Creating socially awkward wearable..." id="RPdHonEHfh6rfLGmE" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">How not to read the room: Creating socially awkward wearable...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Stephanie Nemeth</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§fcC2ASEZqJbm2mzhT§8" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="6zDKWMAzRk3s9Zdcw" data-session-title="XXSS: Exotic Cross-Site Scripting vectors" id="8XA8ZLjh94AzA8qso" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">XXSS: Exotic Cross-Site Scripting vectors</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Benedek Gagyi</span>
+                      <span class="right">Security</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>18:30</div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§SMpH8XCoBZXKY5f9n§9" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="mBbzWBerTskAB4hRa" data-session-title="Defining Operational Excellence" id="R5Kqby2TzM7TiMfQg" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Defining Operational Excellence</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Niklas Modig</span>
+                      <span class="right">Keynote</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§AgyfqDGL2sPCs4Ycj§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§Z569Ch8xnaEsMZjir§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§eWnqdASsnFYcsWrZC§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§LYCz3myi2sMKuztYB§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§mLsppTucSgZEvLukS§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§fcC2ASEZqJbm2mzhT§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>20:30</div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§SMpH8XCoBZXKY5f9n§91" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="yJ228Y4MYJm3Mtd86" data-session-title="Evening stand up comedy with Jen Brister" id="c876xCkAWyvZ6NbkX" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Evening stand up comedy with Jen Brister</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Jen Brister</span>
+                      <span class="right">Keynote</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§AgyfqDGL2sPCs4Ycj§91" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§Z569Ch8xnaEsMZjir§91" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§eWnqdASsnFYcsWrZC§91" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§LYCz3myi2sMKuztYB§91" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§mLsppTucSgZEvLukS§91" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§F5EkNRS32gz2MfwBW§fcC2ASEZqJbm2mzhT§91" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+          </tbody>
+
+        </table>
+      </div>
+
+      
+      <h5 data-day="5" class="dayheadline white-text dayheadline-toggle"><i data-day="5" class="material-icons dayheadline-toggle left">expand_less</i>Friday
+      </h5>
+
+      <div class="day-wrapper" div="" id="5">
+        <table class="bordered">
+          <thead>
+            <tr>
+              <th>Time</th>
+              
+              <th class="roomheader">
+                Envy
+              </th>
+              
+              <th class="roomheader">
+                Gluttony
+              </th>
+              
+              <th class="roomheader">
+                Greed
+              </th>
+              
+              <th class="roomheader">
+                Lust
+              </th>
+              
+              <th class="roomheader">
+                Pride
+              </th>
+              
+              <th class="roomheader">
+                Sloth
+              </th>
+              
+              <th class="roomheader">
+                Wrath
+              </th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="startingtime">
+                <div>09:00</div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§SMpH8XCoBZXKY5f9n§1" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="oJbd6CFvF8wDrepRX" data-session-title="Everybody lies" id="EFTQxf6i8HzWP7Lz3" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Everybody lies</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Seth Stephens-Davidowitz</span>
+                      <span class="right">Keynote</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§AgyfqDGL2sPCs4Ycj§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§Z569Ch8xnaEsMZjir§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§eWnqdASsnFYcsWrZC§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§LYCz3myi2sMKuztYB§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§mLsppTucSgZEvLukS§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§fcC2ASEZqJbm2mzhT§1" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>10:30</div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§SMpH8XCoBZXKY5f9n§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="s9mbc6zRH7GQY5mug" data-session-title="Common Component Decomposition Pitfalls (And How To Avoid Th..." id="h9yhR9Yuq4xz8XHMY" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Common Component Decomposition Pitfalls (And How To Avoid Th...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Rob Ocel</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§AgyfqDGL2sPCs4Ycj§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="AwYSTRiaQzyYCzKWW" data-session-title="Business Agility in practice - an introduction to Beyond Bud..." id="4kfe4JhKCketr5WrF" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Business Agility in practice - an introduction to Beyond Bud...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Bjarte Bogsnes</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§Z569Ch8xnaEsMZjir§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="YdYi2BsgNsMdgM7wB" data-session-title="From YAML to TypeScript: Developer’s View on Cloud Automatio..." id="7ua7x95YmXMfLhvF4" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">From YAML to TypeScript: Developer’s View on Cloud Automatio...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Mikhail Shilkov</span>
+                      <span class="right">DevOps</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§eWnqdASsnFYcsWrZC§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="Qdf8FnnrcaH9FBoXk" data-session-title="Breaking changes" id="u4k6PxLm5p967RFPA" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Breaking changes</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>James Coglan</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§LYCz3myi2sMKuztYB§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="ECgxztPa7oo2KR7dm" data-session-title="Security features to consider in .Net Core 3" id="QPXabxFaw53QyW4ra" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Security features to consider in .Net Core 3</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Cecilia Wirén</span>
+                      <span class="right">.NET</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§mLsppTucSgZEvLukS§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="TQn3zpSpu32bQgaNe" data-session-title="Back and Beyond: A Reflection on Modern Testing" id="Z3bDpWMHqw6bE2b7y" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Back and Beyond: A Reflection on Modern Testing</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Alan Page</span>
+                      <span class="right">Quality &amp; Test</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§fcC2ASEZqJbm2mzhT§2" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="bkGjqSCqvQr3MQo9A" data-session-title="Introduction to Face Processing with Computer Vision" id="YFzfyeyBDq5sNepif" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Introduction to Face Processing with Computer Vision</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Gabriel Bianconi</span>
+                      <span class="right">Data Science</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>11:30</div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§SMpH8XCoBZXKY5f9n§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="pMrLRRBN6AoSHDMzY" data-session-title="Let&#39;s (not) get rid of all the managers!" id="rdRo3cMB7Ek6M9rxq" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Let's (not) get rid of all the managers!</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Julia Wester</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§AgyfqDGL2sPCs4Ycj§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="yaDXyTJxHeLoL9Wpj" data-session-title="Container Evolution - from single container to applications ..." id="j8nxAKZARQBsQ9Pj9" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Container Evolution - from single container to applications ...</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Hardy Ferentschik</span>
+                      <span class="right">Cloud</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§Z569Ch8xnaEsMZjir§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="iAnDpkdQpn5LCr4YX" data-session-title="Striving towards more productive development workflows" id="CiBizoL3K7CEW7AbC" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Striving towards more productive development workflows</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Sebastian Daschner</span>
+                      <span class="right">Quality &amp; Test</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§eWnqdASsnFYcsWrZC§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="3uNwbMTQcqjo86DHj" data-session-title="The Rise of JAMStack" id="D2LRGYpCpQf8DTPZW" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">The Rise of JAMStack</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Shawn Wang</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§LYCz3myi2sMKuztYB§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="CggcsE3gQQuXcAxWb" data-session-title="Engineering data quality" id="YncudfBFiTEcwoaQ9" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Engineering data quality</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Lars Albertsson</span>
+                      <span class="right">Data Science</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§mLsppTucSgZEvLukS§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="8sGAXtSJzAdbhJ35g" data-session-title="What the game industry taught me about performance" id="pLZ2e32naJXtNvyHd" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">What the game industry taught me about performance</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Brian Rasmussen</span>
+                      <span class="right">.NET</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§fcC2ASEZqJbm2mzhT§3" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="TbRSEoq34Sf3ZbYiJ" data-session-title="Handling Dark Mode on Android and iOS" id="p4c6YWaACGkuNGW8R" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Handling Dark Mode on Android and iOS</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Mike Wolfson</span>
+                      <span class="right">Android</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>13:00</div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§SMpH8XCoBZXKY5f9n§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="fKWC3EFAyZ56uCCFc" data-session-title="Dealing with eventual consistency" id="jxJh88PZJkTPWF5qx" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Dealing with eventual consistency</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Dennis van der Stelt</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§AgyfqDGL2sPCs4Ycj§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="Tkp2moNGupcBciXzK" data-session-title="Own your speed" id="6Cu6hN5ha9jT85Eev" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Own your speed</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Pia Nilsson</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§Z569Ch8xnaEsMZjir§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="SNr7s9ZQraiMYeZz5" data-session-title="Visual thinking – simplify complex" id="8S6W29oCqB2noHgto" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Visual thinking – simplify complex</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Yuri Malishenko</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§eWnqdASsnFYcsWrZC§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="oWZkD7sXZghCG5r3q" data-session-title="Maximizing performance with GraalVM" id="N2WYHkkWdzhqYMFdd" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Maximizing performance with GraalVM</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Oleg Šelajev</span>
+                      <span class="right">JVM</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§LYCz3myi2sMKuztYB§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="EMh8KPMzGanbQazEZ" data-session-title="The Gordian Knot" id="KdzD3bMGmoeYfKpmo" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">The Gordian Knot</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Alberto Brandolini</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§mLsppTucSgZEvLukS§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-otherspeaker-id="os2b3j82hYPTAQr4f" data-speaker-id="7KmxXheGWb6opNZr6" data-session-title="Building mobile app core features in the spirit of DevOps" id="9uZt27L3mnobzdnwx" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Building mobile app core features in the spirit of DevOps</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Nils Nilsson</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§fcC2ASEZqJbm2mzhT§4" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="bkGjqSCqvQr3MQo9A" data-session-title="Applied Machine Learning Playbook: From Idea to Production" id="fuXhWbyGMa5MD7ShH" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Applied Machine Learning Playbook: From Idea to Production</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Gabriel Bianconi</span>
+                      <span class="right">Data Science</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>14:00</div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§SMpH8XCoBZXKY5f9n§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="iAnDpkdQpn5LCr4YX" data-session-title="Modern Enterprise Java from the ground up" id="pEaNqXLcrDpy4rQ3W" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Modern Enterprise Java from the ground up</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Sebastian Daschner</span>
+                      <span class="right">JVM</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§AgyfqDGL2sPCs4Ycj§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="Ybjxc9fC4EexuWc5e" data-session-title="Shift Your Leadership" id="eECkSpzbmao8uR85n" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Shift Your Leadership</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Pete Behrens</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§Z569Ch8xnaEsMZjir§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="tKZehqWFPhdDrCf4i" data-session-title="API Management, Meet Event Management" id="enZxPNSjp8TXuasue" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">API Management, Meet Event Management</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Jeremy Meiss</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§eWnqdASsnFYcsWrZC§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="zfDsfTXwseBb8Yt8c" data-session-title="Advent of Code: Behind the Scenes" id="TQgTSEng4usxjFAro" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Advent of Code: Behind the Scenes</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Eric Wastl</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§LYCz3myi2sMKuztYB§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="zurckXZnbtXfvjMnk" data-session-title="Micro Frontends - A microservice approach to the modern web" id="4GAcdDSRLpFdwbwjf" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Micro Frontends - A microservice approach to the modern web</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Ivan Jovanovic</span>
+                      <span class="right">Web</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§mLsppTucSgZEvLukS§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="7SHKtRGGuY3hCQKPH" data-session-title="Don&#39;t Take It Personally" id="prnp2NhZkF4rc6Mc9" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Don't Take It Personally</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Bailey Hanna</span>
+                      <span class="right">People &amp; Teams</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§fcC2ASEZqJbm2mzhT§5" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="bLPCxCvNdnbLpembc" data-session-title="Lessons learned from running a cryptocurrency exchange" id="xLWT5eEAK3GmhwC9u" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Lessons learned from running a cryptocurrency exchange</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Badi Sudhakaran</span>
+                      <span class="right">Architecture</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>15:10</div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§SMpH8XCoBZXKY5f9n§6" class="container slotbox" style="height:90px">
+                  
+                  <div data-speaker-id="nd2rfsAFJCRhzbxhA" data-session-title="Debunking the Myth: Extending Cyberpsychology Beyond Freud" id="uabMMAR8NdhcKrpeF" class="card grey darken-1 plannersessiondropped">
+                    <div class="card-content white-text sessioncontent" style="height:52px;">
+                      <span class="card-title sessiontitle">Debunking the Myth: Extending Cyberpsychology Beyond Freud</span>
+                    </div>
+                    <div class="card-action grey darken-2 sessionaction">
+                      <span>Alison Attrill-Smith</span>
+                      <span class="right">Keynote</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§AgyfqDGL2sPCs4Ycj§6" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§Z569Ch8xnaEsMZjir§6" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§eWnqdASsnFYcsWrZC§6" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§LYCz3myi2sMKuztYB§6" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§mLsppTucSgZEvLukS§6" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§fcC2ASEZqJbm2mzhT§6" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>16:40</div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§SMpH8XCoBZXKY5f9n§7" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§AgyfqDGL2sPCs4Ycj§7" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§Z569Ch8xnaEsMZjir§7" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§eWnqdASsnFYcsWrZC§7" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§LYCz3myi2sMKuztYB§7" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§mLsppTucSgZEvLukS§7" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§fcC2ASEZqJbm2mzhT§7" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>17:40</div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§SMpH8XCoBZXKY5f9n§8" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§AgyfqDGL2sPCs4Ycj§8" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§Z569Ch8xnaEsMZjir§8" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§eWnqdASsnFYcsWrZC§8" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§LYCz3myi2sMKuztYB§8" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§mLsppTucSgZEvLukS§8" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§fcC2ASEZqJbm2mzhT§8" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+            <tr>
+              <td class="startingtime">
+                <div>18:50</div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§SMpH8XCoBZXKY5f9n§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§AgyfqDGL2sPCs4Ycj§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§Z569Ch8xnaEsMZjir§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§eWnqdASsnFYcsWrZC§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§LYCz3myi2sMKuztYB§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§mLsppTucSgZEvLukS§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+              <td>
+
+                <div id="§Q5NEpFJGgiEdMZaYf§fcC2ASEZqJbm2mzhT§9" class="container slotbox" style="height:90px">
+                  
+                </div>
+              </td>
+              
+            </tr>
+            
+          </tbody>
+
+        </table>
+      </div>
+
+      
+    </div>
+  </div>
+  
+  
+  </main>
+  <footer class="blue-grey darken-2">
+    <h6>Sharing knowledge</h6>
+  </footer>
+  </div>
+  </div><div class="drag-target" data-sidenav="nav-mobile" style="left: 0px; touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
