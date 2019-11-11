@@ -151,7 +151,9 @@
           target="_blank"
           >Steinbeck</a
         >
-        was a complete genius. There are very few things by
+        was a complete genius. I don't understand how I haven't read
+        <a href="https://www.goodreads.com/review/show/3021255431">Borges</a>
+        until about two months back. There are very few things by
         <a
           href="https://www.goodreads.com/author/show/1221698.Neil_Gaiman"
           target="_blank"
