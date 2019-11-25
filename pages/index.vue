@@ -151,7 +151,7 @@
           target="_blank"
           >Steinbeck</a
         >
-        was a complete genius. I don't understand how I haven't read
+        was a genius. I don't understand how I hadn't read
         <a href="https://www.goodreads.com/review/show/3021255431">Borges</a>
         until about two months back. There are very few things by
         <a
@@ -165,7 +165,7 @@
           target="_blank"
           >Pratchett</a
         >
-        I wouldn't recommend to you with zero doubts. I really like
+        I wouldn't recommend to you with zero doubts. I really like what
         <a
           href="https://www.goodreads.com/author/show/395812.Yuval_Noah_Harari"
           target="_blank"
