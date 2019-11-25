@@ -64,8 +64,8 @@
         be my favourite invention of all times.
       </p>
       <p>
-        Riddles got me into software development, and they keep me in. Ideally,
-        riddles that matter. Awareness is, in my mind, the most important thing
+        Riddles got me into software development, and they keep me in.
+        Awareness is, in my mind, the most important thing
         in the world and attention the ultimate one to give.
       </p>
 
