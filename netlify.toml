@@ -1,5 +1,4 @@
-[[redirects]]
-  from = "/donna-redirect"
-  to = "ms-word:ofe|u|https://tadeaspetak.com/welcome-back.docx"
-  status = 200
-  force = true
+[build]
+  command = "npm install && npm run generate"
+  functions = "functions"
+  publish = "dist"
