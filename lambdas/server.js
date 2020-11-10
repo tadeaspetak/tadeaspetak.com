@@ -6,7 +6,13 @@ const bodyParser = require('body-parser')
 
 const router = express.Router()
 router.get('/donna-redirect', (req, res) => {
-  res.redirect('ms-word:ofe|u|https://tadeaspetak.com/welcome-back.docx')
+  res.redirect('ms-word:ofv|u|https://tadeaspetak.com/welcome-back.docx')
+})
+router.get('/donna-redirect-escape', (req, res) => {
+  res.redirect('ms-word:ofv%7Cu%7Chttps://tadeaspetak.com/welcome-back.docx')
+})
+router.get('/donna-redirect-quote', (req, res) => {
+  res.redirect('ms-word:ofv|u|\'https://tadeaspetak.com/welcome-back.docx\'')
 })
 router.get('/another', (req, res) => res.json({ route: req.originalUrl }))
 
