@@ -64,9 +64,9 @@
         be my favourite invention of all times.
       </p>
       <p>
-        Riddles got me into software development, and they keep me in.
-        Awareness is, in my mind, the most important thing
-        in the world and attention the ultimate one to give.
+        Riddles got me into software development, and they keep me in. Awareness
+        is, in my mind, the most important thing in the world and attention the
+        ultimate one to give.
       </p>
 
       <h2>Work</h2>
@@ -76,16 +76,16 @@
         <a href="https://oredev.org" target="_blank">Øredev</a>, one of the
         largest dev conferences in the Nordics. Also, I am exploring new
         directions for us to venture into, resulting e.g. in
-        <a href="https://mindthegaps.io" target="_blank">Mind the Gaps</a>, a brand new conference
-        focusing on digital ethics.
+        <a href="https://mindthegaps.io" target="_blank">Mind the Gaps</a>, a
+        brand new conference focusing on digital ethics.
       </p>
       <p>
         Until August 2018, I was fullstacking at Zook (these days
         <a href="https://donna.legal" target="_blank">Donna</a>), back then
         building an AI that could be to the business world what thesaurus is to
         langugage. Before that, I worked as a consultant at
-        <a href="https://jayway.com" target="_blank">Jayway</a> and was building a
-        digital food ambassador at
+        <a href="https://jayway.com" target="_blank">Jayway</a> and was building
+        a digital food ambassador at
         <a href="https://ipiit.com" target="_blank">ipiit</a> earlier still.
       </p>
 
@@ -99,7 +99,9 @@
         and distributed. Time for this project dissipated after an MVP in 2014,
         but I would love to get back to it at one point. Some of the hikes I
         didn't say no to can be found at
-        <a href="https://pixels.mariemala.com" target="_blank">Czech My Pixels</a>.
+        <a href="https://pixels.mariemala.com" target="_blank"
+          >Czech My Pixels</a
+        >.
       </p>
 
       <p>
@@ -170,7 +172,8 @@
           href="https://www.goodreads.com/author/show/395812.Yuval_Noah_Harari"
           target="_blank"
           >Harari</a
-        > has to say, but, then again, who doesn't?
+        >
+        has to say, but, then again, who doesn't?
       </p>
 
       <p>

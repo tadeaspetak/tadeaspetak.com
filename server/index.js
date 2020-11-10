@@ -21,6 +21,10 @@ async function start() {
     await nuxt.ready()
   }
 
+  app.get('/donna-redirect', (req, res) => {
+    res.redirect('ms-word:ofe|u|https://tadeaspetak.com/welcome-back.docx')
+  })
+
   // Give nuxt middleware to express
   app.use(nuxt.render)
 

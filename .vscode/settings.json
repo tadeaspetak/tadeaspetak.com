@@ -5,5 +5,8 @@
       "javascriptreact",
       {"language": "vue", "autoFix": true}
   ],
-  "prettier.proseWrap": "never"
+  "prettier.proseWrap": "never",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
