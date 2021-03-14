@@ -72,16 +72,20 @@
       <h2>Work</h2>
 
       <p>
-        Currently, I'm shaping the program of
+        Currently, I fullstack at <a href="https://donna.legal" target="_blank">Donna</a>,
+        using tech to replace the robot within the lawyer.
+      </p>
+
+      <p>
+        In 2018-2019, I was shaping the program of
         <a href="https://oredev.org" target="_blank">Øredev</a>, one of the
-        largest dev conferences in the Nordics. Also, I am exploring new
+        largest dev conferences in the Nordics. I was also exploring new
         directions for us to venture into, resulting e.g. in
         <a href="https://mindthegaps.io" target="_blank">Mind the Gaps</a>, a
         brand new conference focusing on digital ethics.
       </p>
       <p>
-        Until August 2018, I was fullstacking at Zook (these days
-        <a href="https://donna.legal" target="_blank">Donna</a>), back then
+        Until August 2018, I was fullstacking at Zook, back then
         building an AI that could be to the business world what thesaurus is to
         langugage. Before that, I worked as a consultant at
         <a href="https://jayway.com" target="_blank">Jayway</a> and was building
