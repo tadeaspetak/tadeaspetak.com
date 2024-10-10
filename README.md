@@ -1,5 +1,11 @@
 # Welcome to Remix!
 
+## TODO:
+
+- recreate the layout https://github.com/tadeaspetak/tadeaspetak.com/blob/main/components/layout.tsx
+- handle assets properly
+- copy the texts in a reasonable way (markdown or HTML?)
+
 - 📖 [Remix docs](https://remix.run/docs)
 
 ## Development
